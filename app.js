@@ -3,6 +3,7 @@ const app = express();
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+const PORT = process.env.PORT || 5000;
 require("dotenv/config");
 
 mongoose.set("strictQuery", false);
@@ -27,4 +28,4 @@ mongoose.connect(process.env.DB_CONNECTION, { useNewUrlParser: true }, () =>
 );
 
 //Listening to server
-app.listen(3000);
+app.listen(PORT);
