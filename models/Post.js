@@ -1,17 +1,30 @@
+const { url } = require("inspector");
 const mongoose = require("mongoose");
 
 const PostSchema = mongoose.Schema({
-  title: {
+  country: {
     type: String,
     required: true,
   },
-  description: {
+  abbreviation: {
     type: String,
     required: true,
   },
-  date: {
-    type: Date,
-    default: Date.now,
+  capital: {
+    type: String,
+    required: true,
+  },
+  population: {
+    type: Number,
+    required: true,
+  },
+  admission: {
+    type: String,
+    required: true,
+  },
+  flag: {
+    type: String,
+    required: true,
   },
 });
 
