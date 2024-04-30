@@ -23,10 +23,8 @@ app.get("/", (req, res) => {
 });
 
 //Connect to DB
-mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/posts",
-  { useNewUrlParser: true },
-  () => console.log("connected to DB")
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true }, () =>
+  console.log("connected to DB")
 );
 
 //Listening to server
