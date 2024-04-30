@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "states api",
   "main": "index.js",
+  "engines": {
+    "node": "v21.6.2"
+  },
   "scripts": {
     "start": "nodemon app.js"
   },
