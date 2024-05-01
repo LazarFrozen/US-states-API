@@ -19,7 +19,7 @@ app.use("/posts", postsRoute);
 
 //Routes
 app.get("/", (req, res) => {
-  res.send("We are on home");
+  res.send("Homepage");
 });
 
 //Connect to DB
